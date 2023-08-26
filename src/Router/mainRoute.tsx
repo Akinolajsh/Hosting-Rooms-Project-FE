@@ -14,7 +14,7 @@ export const mainRoute= createBrowserRouter([
             }
         ]
     },{
-        path: "host",
+        path: "/host",
         element:<HostRoom/>
     }
 ])
