@@ -1,6 +1,7 @@
 import {createBrowserRouter} from "react-router-dom"
 import Layout from "../Components/Common/Layout"
 import DetailsPage from "../Pages/Screen/Users/DetailsPage"
+import HostRoom from "../Pages/Screen/HostRoom"
 
 export const mainRoute= createBrowserRouter([
     {
@@ -12,5 +13,8 @@ export const mainRoute= createBrowserRouter([
                 element: <DetailsPage/>
             }
         ]
+    },{
+        path: "host",
+        element:<HostRoom/>
     }
 ])
