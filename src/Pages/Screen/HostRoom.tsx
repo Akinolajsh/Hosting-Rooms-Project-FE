@@ -1,8 +1,11 @@
+import Header from "../../EmmaProps/EmmaHeader"
 
 
 const HostRoom = () => {
   return (
-    <div>HostRoom</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 
