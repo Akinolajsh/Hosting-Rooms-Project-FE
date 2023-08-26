@@ -4,6 +4,7 @@ import DetailsPage from "../Pages/Screen/Users/DetailsPage";
 import HostRoom from "../Pages/Screen/HostRoom";
 import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
+import HomePage from "../Pages/Screen/Users/HomePage";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -27,5 +28,9 @@ export const mainRoute = createBrowserRouter([
   {
     path: "/sign-in",
     element: <SignIn />,
+  },
+  {
+    path: "/home",
+    element: <HomePage />,
   },
 ]);

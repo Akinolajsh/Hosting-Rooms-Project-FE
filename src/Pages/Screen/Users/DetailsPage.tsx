@@ -48,7 +48,7 @@ const DetailsPage = () => {
 
         {/* About Setup*/}
         <div className="w-full justify-center items-center">
-          <div className="w-[55%] flex flex-col h-[200px] bg-yellow-200 mt-3 border-b-[1px] border-[silver]">
+          <div className="w-[65%] flex flex-col h-[200px] bg-yellow-200 mt-3 border-b-[1px] border-[silver]">
             <div className="justify-between flex bg-green-200 items-end text-[20px] font-semibold">
               {" "}
               Room in a cottage hosted by Roberta{" "}
@@ -56,12 +56,14 @@ const DetailsPage = () => {
                 <img src={avatar} className="h-full w-full" />
               </div>
             </div>
-            <div className="border-[1px] rounded">
+          <div className="">
+          <div className="border-[1px] rounded-[10px] h-[100px] w-[200px] bg-slate-200 ">
 
-            </div>
+</div>
+          </div>
           </div>
          {/* OtherSide */}
-         <div className="w-[45%]"></div>
+         <div className="w-[35%]"></div>
          {/* OtherSide */}
         </div>
         {/* About Setup */}
