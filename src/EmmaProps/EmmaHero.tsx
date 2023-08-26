@@ -1,11 +1,12 @@
 import { AiOutlineSearch } from "react-icons/ai";
+import img from "../assets/pexels-suzy-hazelwood-1098526 (1).jpg";
 
 const EmmaHero = () => {
   return (
     <div className="w-[100%] h-[600px] flex justify-center items-center">
-      <div className="w-[90%] h-full flex justify-between items-center">
+      <div className="w-[90%] h-full flex justify-between items-center ">
         {/*right*/}
-        <div className="flex justify-center items-center flex-col w-[40%]">
+        <div className="flex justify-center items-center flex-col w-[40%] h-full">
           <div className="text-[50px] font-bold text-[#E41D57]">Airbnb it.</div>
           <div className="text-[50px] font-bold leading-[0.9]">
             You could earn
@@ -26,17 +27,19 @@ const EmmaHero = () => {
             Learn how we estimate your earnings
           </div>
           {/*search*/}
-          <div className="flex items-center w-[500px] h-[60px] rounded-full pl-[20px] border-2
-          hover:cursor-pointer">
-              <AiOutlineSearch style={{fontSize:"25px", color:"#E41D57"}} />
+          <div
+            className="flex items-center w-[500px] h-[60px] rounded-full pl-[20px] border-2
+          hover:cursor-pointer"
+          >
+            <AiOutlineSearch style={{ fontSize: "25px", color: "#E41D57" }} />
             <div className="ml-[10px]">
-            <div className="font-bold">Lagos</div>
-            <div >Entire place. 2 bedrooms</div>
+              <div className="font-bold">Lagos</div>
+              <div>Entire place. 2 bedrooms</div>
             </div>
           </div>
         </div>
         {/*left*/}
-        <div></div>
+      <img src={img} className="w-[50%] h-[500px] rounded-[20px] hover:cursor-grab" />
       </div>
     </div>
   );
