@@ -1,10 +1,12 @@
 import Header from "../../EmmaProps/EmmaHeader"
+import EmmaHero from "../../EmmaProps/EmmaHero"
 
 
 const HostRoom = () => {
   return (
     <div>
-      <Header/>
+     <Header/>
+     <EmmaHero/>
     </div>
   )
 }
