@@ -2,6 +2,8 @@ import { TbBrandAirbnb } from "react-icons/tb";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { GoShare } from "react-icons/go";
 import { LiaBedSolid } from "react-icons/lia";
+import { FaShower } from "react-icons/fa";
+import { BiHome } from "react-icons/bi";
 import avatar from "../../../assets/dummy-prod-1.jpg";
 
 const DetailsPage = () => {
@@ -13,11 +15,11 @@ const data:any=[
     text: "bed"
   },
   {
-    icon: <LiaBedSolid/>,
+    icon: <FaShower/>,
     text: "Private attached bathroom"
   },
   {
-    icon: "LiaBedSolid",
+    icon: <BiHome/>,
     text: "Host and other guests may be here"
   },
 ]
@@ -66,7 +68,7 @@ const data:any=[
 
         {/* About Setup*/}
         <div className="w-full justify-center items-center">
-          <div className="w-[60%] flex flex-col h-[200px]  mt-3 border-b-[1px] border-[silver]">
+          <div className="w-[60%] flex flex-col h-[170px]  mt-3 border-b-[1px] border-[#e1e0e0]">
             <div className="justify-between flex  items-end text-[20px] font-semibold">
               {" "}
               Room in a cottage hosted by Roberta{" "}
@@ -77,8 +79,8 @@ const data:any=[
           <div className="flex justify-between items-center mt-4">
         {
           data?.map((props:any)=>(
-            <div className="border-[1px] rounded-[10px] h-[100px] w-[200px]  px-[12px] py-[10py] justify-center items-center flex gap-3">
-            <div >{props.icon}</div> <div className="text-[14px] font-semibold flex justify-center items-center gap-1"><div>{props.num}</div><div>{props.text}</div></div>
+            <div className="border-[1px] rounded-[10px] h-[80px] w-[200px]  px-[12px] py-[10py] justify-center items-center flex gap-3">
+            <div className="text-[30px]">{props.icon}</div> <div className="text-[14px] font-semibold flex justify-center items-center gap-1"><div>{props.num}</div><div>{props.text}</div></div>
             </div>
           ))
         }
@@ -89,6 +91,30 @@ const data:any=[
          {/* OtherSide */}
         </div>
         {/* About Setup */}
+
+        <div className="h-[300px] w-full border-b-[1px] border-[#e1e0e0] items-center py-7">
+<div className="flex items-center my-4 ">
+  <div className="text-[30px] flex mb-3"><BiHome/></div>
+  <div className="flex flex-col justify-center ml-2 leading-6">
+    <div className="text-[18px] font-medium">Room in a cottage</div>
+    <div className="text-[13px] text-[#696169">Your own room in a home, plus access to shared spaces.</div>
+  </div>
+</div>
+<div className="flex items-center my-4">
+  <div className="text-[30px]"><BiHome/></div>
+  <div className="flex flex-col justify-center ml-2 leading-6">
+    <div className="text-[18px] font-medium">Room in a cottage</div>
+    <div className="text-[13px] text-[#696169">Your own room in a home, plus access to shared spaces.</div>
+  </div>
+</div>
+<div className="flex items-center my-4">
+  <div className="text-[30px]"><BiHome/></div>
+  <div className="flex flex-col justify-center ml-2 leading-6">
+    <div className="text-[18px] font-medium">Room in a cottage</div>
+    <div className="text-[13px] text-[#696169">Your own room in a home, plus access to shared spaces.</div>
+  </div>
+</div>
+        </div>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export const mainRoute = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <DetailsPage />,
+        element: <HomePage />,
       },
     ],
   },
@@ -30,7 +30,7 @@ export const mainRoute = createBrowserRouter([
     element: <SignIn />,
   },
   {
-    path: "/home",
-    element: <HomePage />,
+    path: "/details",
+    element: <DetailsPage />,
   },
 ]);
