@@ -1,9 +1,27 @@
 import { TbBrandAirbnb } from "react-icons/tb";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { GoShare } from "react-icons/go";
+import { LiaBedSolid } from "react-icons/lia";
 import avatar from "../../../assets/dummy-prod-1.jpg";
 
 const DetailsPage = () => {
+
+const data:any=[
+  {
+    num: "2",
+    icon: <LiaBedSolid/>,
+    text: "bed"
+  },
+  {
+    icon: <LiaBedSolid/>,
+    text: "Private attached bathroom"
+  },
+  {
+    icon: "LiaBedSolid",
+    text: "Host and other guests may be here"
+  },
+]
+
   return (
     <div className="w-full flex justify-center items-center bg-yellow">
       <div className="w-[80%] justify-center items-center flex flex-col ">
@@ -48,22 +66,26 @@ const DetailsPage = () => {
 
         {/* About Setup*/}
         <div className="w-full justify-center items-center">
-          <div className="w-[65%] flex flex-col h-[200px] bg-yellow-200 mt-3 border-b-[1px] border-[silver]">
-            <div className="justify-between flex bg-green-200 items-end text-[20px] font-semibold">
+          <div className="w-[60%] flex flex-col h-[200px]  mt-3 border-b-[1px] border-[silver]">
+            <div className="justify-between flex  items-end text-[20px] font-semibold">
               {" "}
               Room in a cottage hosted by Roberta{" "}
               <div className=" w-[40px] h-[40px] rounded-[50%] object-cover bg-black">
                 <img src={avatar} className="h-full w-full" />
               </div>
             </div>
-          <div className="">
-          <div className="border-[1px] rounded-[10px] h-[100px] w-[200px] bg-slate-200 ">
-
-</div>
+          <div className="flex justify-between items-center mt-4">
+        {
+          data?.map((props:any)=>(
+            <div className="border-[1px] rounded-[10px] h-[100px] w-[200px]  px-[12px] py-[10py] justify-center items-center flex gap-3">
+            <div >{props.icon}</div> <div className="text-[14px] font-semibold flex justify-center items-center gap-1"><div>{props.num}</div><div>{props.text}</div></div>
+            </div>
+          ))
+        }
           </div>
           </div>
          {/* OtherSide */}
-         <div className="w-[35%]"></div>
+         <div className="w-[40%]"></div>
          {/* OtherSide */}
         </div>
         {/* About Setup */}
