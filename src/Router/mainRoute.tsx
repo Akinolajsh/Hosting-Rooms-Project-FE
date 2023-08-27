@@ -5,6 +5,7 @@ import HostRoom from "../Pages/Screen/HostRoom";
 import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
 import HomePage from "../Pages/Screen/Users/HomePage";
+import Description from "../Pages/Screen/Users/Description";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -32,5 +33,9 @@ export const mainRoute = createBrowserRouter([
   {
     path: "/details",
     element: <DetailsPage />,
+  },
+  {
+    path: "/detail",
+    element: <Description/>,
   },
 ]);
