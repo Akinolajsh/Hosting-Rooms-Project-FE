@@ -1,89 +1,82 @@
 import {
-  TbBrandAirbnb,
-  TbToolsKitchen,
-  TbWashMachine,
-  TbPool,
-} from "react-icons/tb";
-import { GoShieldLock } from "react-icons/go";
-import { LiaBedSolid } from "react-icons/lia";
-import { AiFillStar, AiOutlineCar } from "react-icons/ai";
-import { FaShower } from "react-icons/fa";
-import { BiHome, BiWifi } from "react-icons/bi";
-import { BsBalloon } from "react-icons/bs";
-import { FiShoppingBag } from "react-icons/fi";
-import { GiOfficeChair } from "react-icons/gi";
-import { PiLightbulb, PiCoffee, PiFlowerTulipDuotone } from "react-icons/pi";
-import avatar from "../../../assets/dummy-prod-1.jpg";
+    TbBrandAirbnb,
+    TbToolsKitchen,
+    TbWashMachine,
+    TbPool,
+  } from "react-icons/tb";
+  import { AiFillStar, AiOutlineCar } from "react-icons/ai";
+  import { GoShieldLock } from "react-icons/go";
+  import { LiaBedSolid } from "react-icons/lia";
+  import { FaShower } from "react-icons/fa";
+  import { BiHome, BiWifi } from "react-icons/bi";
+  import { BsBalloon } from "react-icons/bs";
+  import { FiShoppingBag } from "react-icons/fi";
+  import { GiOfficeChair } from "react-icons/gi";
+  import { PiLightbulb, PiCoffee, PiFlowerTulipDuotone } from "react-icons/pi";
+import avatar from "../../../assets/dummy-prod-1.jpg"
 
-const DetailsPage = () => {
-  const data: any = [
-    {
-      num: "2",
-      icon: <LiaBedSolid />,
-      text: "bed",
-    },
-    {
-      icon: <FaShower />,
-      text: "Private attached bathroom",
-    },
-    {
-      icon: <BiHome />,
-      text: "Host and other guests may be here",
-    },
-  ];
+const About = () => {
 
-  const data1: any = [
-    {
-      icons: <FaShower />,
-      title: "Room in a cottage",
-      text: "Your own room in a home, plus access to shared spaces.",
-    },
-    {
-      icons: <LiaBedSolid />,
-      title: "Roberta is a Superhost",
-      text: "Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.",
-    },
-    {
-      icons: <FaShower />,
-      title: "Free cancellation before Sep 4.",
-    },
-  ];
+    const data: any = [
+        {
+          num: "2",
+          icon: <LiaBedSolid />,
+          text: "bed",
+        },
+        {
+          icon: <FaShower />,
+          text: "Private attached bathroom",
+        },
+        {
+          icon: <BiHome />,
+          text: "Host and other guests may be here",
+        },
+      ];
+    
+      const data1: any = [
+        {
+          icons: <FaShower />,
+          title: "Room in a cottage",
+          text: "Your own room in a home, plus access to shared spaces.",
+        },
+        {
+          icons: <LiaBedSolid />,
+          title: "Roberta is a Superhost",
+          text: "Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.",
+        },
+        {
+          icons: <FaShower />,
+          title: "Free cancellation before Sep 4.",
+        },
+      ];
+    
+      const data2: any = [
+        {
+          iconx: <BsBalloon />,
+          text: "Born in the 60s",
+        },
+        {
+          iconx: <FiShoppingBag />,
+          text: "My work: Roberta Yoga Massage, UlaBiná, Rede TVT, João do Grão, Body Therapist, TVT - Worker TV, Franmi / Scene 1 Take 2, Na Batalha",
+        },
+        {
+          iconx: <PiLightbulb />,
+          text: "Favorite song in high school: Ovelha negra, Rita Lee",
+        },
+        {
+          iconx: <PiLightbulb />,
+          text: "Fun fact: ?",
+        },
+        {
+          iconx: <PiCoffee />,
+          text: "What's for breakfast: Fruits juice, milk,eggs vegan options",
+        },
+      ];
 
-  const data2: any = [
-    {
-      iconx: <BsBalloon />,
-      text: "Born in the 60s",
-    },
-    {
-      iconx: <FiShoppingBag />,
-      text: "My work: Roberta Yoga Massage, UlaBiná, Rede TVT, João do Grão, Body Therapist, TVT - Worker TV, Franmi / Scene 1 Take 2, Na Batalha",
-    },
-    {
-      iconx: <PiLightbulb />,
-      text: "Favorite song in high school: Ovelha negra, Rita Lee",
-    },
-    {
-      iconx: <PiLightbulb />,
-      text: "Fun fact: ?",
-    },
-    {
-      iconx: <PiCoffee />,
-      text: "What's for breakfast: Fruits juice, milk,eggs vegan options",
-    },
-  ];
   return (
-    <div className="w-full flex justify-center items-center bg-yellow">
-      <div className="w-[80%] justify-center items-center flex flex-col ">
-        {/* Admin Details */}
-
-        {/* Admin Details */}
-
-        {/* Image Setup */}
-     
-        {/* Image Setup */}
-
-        {/* About Setup*/}
-        <div className="w-full justify-center items-center  h-[2500px] ">
+    <div  className="w-full flex justify-center items-center mt-5">
+         <div className="w-[80%] justify-center items-center flex flex-col ">
+         <div className="w-full justify-center items-center  h-[2500px] ">
           <div className="w-[60%] flex flex-col   mt-3 border-b-[1px] border-[red]  ">
             <div className="justify-between flex  items-end text-[20px] font-semibold">
               {" "}
@@ -229,11 +222,11 @@ const DetailsPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="h-[450px] border-b-[1px] border-[#e1e0e0] flex flex-col ">
+              <div className="h-[450px]  flex flex-col ">
                 <div className="h-[50px] flex items-end mb-3">
                   What this place offers
                 </div>
-                <div className="flex  flex-wrap w-[85%] justify-between">
+                <div className="flex  flex-wrap justify-between ">
                   <div className="flex gap-3 w-[250px] mx-2 my-3 ">
                     <div className="text-[20px] flex ">
                       <GoShieldLock />
@@ -288,7 +281,7 @@ const DetailsPage = () => {
                       Shared backyard – Fully fenced
                     </div>
                   </div>
-                  <div className="h-[50px] w-[180px] rounded-[10px] border-[1px] border-black flex justify-center items-center font-semibold mt-8">
+                  <div className="h-[50px] w-[180px] rounded-[10px] border-[1px] border-black flex justify-center items-center font-semibold mb-5">
                     Show all amenities
                   </div>
                 </div>
@@ -299,10 +292,9 @@ const DetailsPage = () => {
           <div className="w-[40%]"></div>
           {/* OtherSide */}
         </div>
-        {/* About Setup */}
-      </div>
+         </div>
     </div>
-  );
-};
+  )
+}
 
-export default DetailsPage;
+export default About
