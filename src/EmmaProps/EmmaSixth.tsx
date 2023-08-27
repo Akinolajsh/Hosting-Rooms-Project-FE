@@ -2,9 +2,9 @@ import img from "../assets/Emma4.jpeg";
 
 const EmmaSixth = () => {
   return (
-    <div className="w-full h-[400px] flex justify-center items-center bg-[#F7F7F7] pt-[40px]">
-      <div className="w-[90%] h-full flex justify-between items-center bg-white rounded-lg">
-        <img src={img} className="w-[55%] h-full object-fill" />
+    <div className="w-full h-[400px] flex justify-center items-center bg-[#F7F7F7] p-[40px]">
+      <div className="w-[90%] h-full flex justify-between items-center bg-white rounded-t-2xl rounded-r-2xl">
+        <img src={img} className="w-[55%] h-full object-cover" />
         <div className="w-[40%] h-full flex  justify-center flex-col">
           <div className="">
             <h1 className="text-[30px] font-bold mb-[10px]">

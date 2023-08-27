@@ -3,7 +3,7 @@ import {BiHomeAlt2} from "react-icons/bi"
 
 const Header = () => {
   return (
-    <div className="w-[100%] h-[70px] flex justify-center items-center z-20" >
+    <div className="w-[100%] h-[70px] flex justify-center items-center z-20 " >
         <div className="w-[90%] h-[70px] flex justify-between items-center">
 <div>
   <FaAirbnb style={{fontSize:"40px", color:"#E41D57"}} className="hover:cursor-pointer"/>

@@ -19,8 +19,8 @@ const EmmaHero = () => {
             </span>{" "}
             at an estimated $76 a night
           </div>
-          <div className="w-[100%] h-[5px] bg-[#DDDDDD] rounded-md mb-[20px]">
-            <div className="w-[30%] h-full bg-[black] rounded-md"></div>
+          <div className="w-[100%] h-[5px] bg-[#DDDDDD] rounded-md mb-[20px] hover:cursor-pointer">
+            <div className="w-[30%] h-full bg-[black] rounded-md hover:cursor-pointer"></div>
           </div>
 
           <div className="underline hover:cursor-pointer mb-[30px]">
