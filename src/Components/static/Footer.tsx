@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="w-full h-[70vh] flex justify-center items-center bg-[#F7F7F7] border-t-2 flex-col pt-[20px]">
       {/*Up*/}
-      <div className="w-[90%] h-[50vh] flex border-b-2">
-        <div className="mr-[200px]">
+      <div className="w-[80%] h-[50vh] flex border-b-2">
+        <div className="mr-[150px]">
           <nav className="font-medium text-[16px] pt-[10px] pb-[6px]">
             Support
           </nav>
@@ -35,7 +35,7 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="mr-[200px]">
+        <div className="mr-[150px]">
           <nav className="font-medium text-[16px] pt-[10px] pb-[6px]">
             Hosting
           </nav>
@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
 
       {/*down*/}
-      <div className="w-[90%] h-[10vh] m-[10px] flex justify-between items-center">
+      <div className="w-[80%] h-[10vh] m-[10px] flex justify-between items-center">
         <div>
           <span className="text-[14px]">© 2023 Airbnb, Inc.</span>{" "}
           <span className="hover:underline hover:cursor-pointer ml-[5px] text-[13px] duration-300">

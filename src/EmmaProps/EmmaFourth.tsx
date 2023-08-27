@@ -6,7 +6,7 @@ import img2 from "../assets/Emma3.jpeg"
 const EmmaFourth = () => {
   return (
     <div className="w-full h-[600px] flex justify-center items-center ">
-      <div className="w-[90%] h-full flex justify-center items-center flex-col">
+      <div className="w-[80%] h-full flex justify-center items-center flex-col">
         <h1 className="text-center font-bold text-[40px] mb-[20px]">
           Introducing Airbnb-friendly apartments
         </h1>
