@@ -27,7 +27,7 @@ const Register = () => {
     style={{backgroundImage : `url(${pix})`}}
     >
       {/* cover */}
-      <div className="w-full h-[100vh] bg-green-950 bg-opacity-30 flex flex-col justify-center items-center">
+      <div className="w-full h-[100vh] bg-[#080707] bg-opacity-30 flex flex-col justify-center items-center">
         {/* Title */}
         <div className="m-5" >
         <div className="text-[30px] font-bold text-white">JoeDalk</div>
@@ -47,7 +47,7 @@ const Register = () => {
         <div className="w-[580px] flex">
 
                 {/* left */}
-            <div className="w-[40%] px-7 flex flex-col items-center justify-center bg-blue-500 py-[20px]">
+            <div className="w-[40%] px-7 flex flex-col items-center justify-center bg-[#737171] py-[20px]">
 {/* logo */}
               <div className="" >
               <div className="text-[20px] font-bold text-white">JoeDalk</div>
@@ -57,17 +57,17 @@ const Register = () => {
           Login using social media to get quick access
              </div>
 {/* social Buttons */}
-              <div className=" flex items-center justify-center px-2 w-[100%] h-[36px] bg-blue-800 text-[12px] rounded-lg mt-5 text-white cursor-pointer">
+              <div className=" flex items-center justify-center px-2 w-[100%] h-[36px] bg-gray-600 text-[12px] rounded-lg mt-5 text-white cursor-pointer">
               <div className="mr-2"><BsFacebook /></div>
                 Signin with facebook
               </div>
 
-              <div className=" flex items-center justify-center px-4 w-[100%] h-[35px] bg-purple-800 text-[12px] rounded-lg mt-5 text-white cursor-pointer">
+              <div className=" flex items-center justify-center px-4 w-[100%] h-[35px] bg-green-700 text-[12px] rounded-lg mt-5 text-white cursor-pointer">
               <div className="mr-2"><BsTwitter /></div >
                 Signin with twitter
               </div>
 
-              <div className=" flex items-center justify-center px-4 w-[100%] h-[35px] bg-orange-800 text-[12px] rounded-lg mt-5 text-white cursor-pointer">
+              <div className=" flex items-center justify-center px-4 w-[100%] h-[35px] bg-rose-600 text-[12px] rounded-lg mt-5 text-white cursor-pointer">
               <div className="mr-2"><BsGoogle /></div>
                 Signin with google
               </div>
@@ -76,13 +76,13 @@ const Register = () => {
                 {/* right */}
             <div className="w-[60%] flex flex-col items-center bg-white justify-center p-7">
 {/* title */}
-              <div className="font-bold text-[18px] mb-5">Sign Up for Free!</div>
+              <div className="font-bold text-[18px] text-rose-600 mb-5">Sign Up for Free!</div>
 
               {/* image */}
               <img className="object-cover  w-[70px] h-[70px] rounded-[35px] bg-slate-500 " src={avatar}/>
 
           <input type="file" className="hidden" id="id" accept="image/jpg, image/jpeg image/png" onChange={onChangeImage}/>
-          <label htmlFor="id" className="mr-[60px] mb-4 text-gray-500 cursor-pointer text-[20px]"> <BsCamera /></label>
+          <label htmlFor="id" className="mr-[60px] mb-4 text-rose-500 cursor-pointer text-[20px]"> <BsCamera /></label>
 
               {/* inputs */}
 {/* full name */}
@@ -96,7 +96,7 @@ const Register = () => {
 {/* password */}
             <div className="border-b-2 h-[40px] w-full mt-6 flex items-center">
             <input className=" outline-none w-full placeholder: text-[13px] placeholder: mb-2" placeholder="password" />
-            <BsCamera className="text-gray-600 cursor-pointer mb-2" />
+            <BsCamera className="text-rose-600 cursor-pointer mb-2" />
             </div>
 {/* confirm password */}
             <div className="border-b-2 h-[40px] w-full mt-6">
@@ -104,11 +104,11 @@ const Register = () => {
             </div>
 
             {/* Button */}
-            <button className="w-full bg-blue-700 h-[40px] rounded-md text-white text-[14px] cursor-pointer mt-4 "> Sign Up with email</button>
+            <button className="w-full bg-rose-700 h-[40px] rounded-md text-white text-[14px] cursor-pointer mt-4 "> Sign Up with email</button>
 
 {/* to Signin */}
           <Link to="/sign-in">
-            <div className=" text-blue-700 text-[13px] cursor-pointer mt-4 ">Already have an account?</div>
+            <div className=" text-rose-700 text-[13px] cursor-pointer mt-4 ">Already have an account?</div>
           </Link>
             </div>
 
