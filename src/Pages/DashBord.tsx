@@ -2,7 +2,7 @@
 const DashBord = () => {
   return (
     <div>
-        <div>DashBord</div>
+        <div></div>
     </div>
   )
 }
