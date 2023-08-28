@@ -6,6 +6,7 @@ import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
 import HomePage from "../Pages/Screen/Users/HomePage";
 import Description from "../Pages/Screen/Users/Description";
+import DashBord from "../Pages/DashBord";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -31,11 +32,11 @@ export const mainRoute = createBrowserRouter([
     element: <SignIn />,
   },
   {
-    path: "/details",
-    element: <DetailsPage />,
-  },
-  {
     path: "/detail",
     element: <Description/>,
   },
+  {
+    path: "/admin-dashboard",
+    element: <DashBord/>
+  }
 ]);
