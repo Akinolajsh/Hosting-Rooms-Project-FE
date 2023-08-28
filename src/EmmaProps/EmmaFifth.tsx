@@ -13,7 +13,7 @@ const EmmaFifth = () => {
         <div className="w-[50%] h-full ">
       <div className="flex justify-between items-center border-b-2 hover:cursor-pointer mb-[30px]">
       <div className="text-[20px] mb-[20px] ">
-Is my place right for Airbnb?
+Is my place right for joeDalk?
 </div>
        <div className="mb-[20px]">
         < RiArrowDropDownLine style={{fontSize:"40px"}}/>
@@ -37,7 +37,7 @@ How much should I interact with guests?
       </div>
       <div className="flex justify-between items-center border-b-2 hover:cursor-pointer mb-[30px]">
       <div className="text-[20px] mb-[20px]">
-      Any tips on being a great Airbnb Host?
+      Any tips on being a great joeDalk Host?
 </div>
        <div className="mb-[20px]">
         < RiArrowDropDownLine style={{fontSize:"40px"}}/>
@@ -45,7 +45,7 @@ How much should I interact with guests?
       </div>
       <div className="flex justify-between items-center  hover:cursor-pointer mb-[30px]">
       <div className="text-[20px] mb-[20px]">
-What are Airbnb’s fees?
+What are joeDalk’s fees?
 </div>
        <div className="mb-[20px]">
         < RiArrowDropDownLine style={{fontSize:"40px"}}/>
