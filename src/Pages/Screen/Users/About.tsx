@@ -77,7 +77,7 @@ const About = () => {
     <div  className="w-full flex justify-center items-center mt-5">
          <div className="w-[80%] justify-center items-center flex flex-col ">
          <div className="w-full justify-center items-center  h-[2500px] ">
-          <div className="w-[60%] flex flex-col   mt-3 border-b-[1px] border-[red]  ">
+          <div className="w-[60%] flex flex-col   mt-3 border-b-[1px]  ">
             <div className="justify-between flex  items-end text-[20px] font-semibold">
               {" "}
               Room in a cottage hosted by Roberta{" "}
@@ -122,7 +122,7 @@ const About = () => {
               </div>
               <div className="h-[1000px] w-full bg-[#F0EFE9] rounded-[20px] flex justify-center items-center ">
                 <div className=" h-[90%] flex flex-col items-center  ">
-                  <div className="w-[400px] h-[250px] bg-white rounded-[20px] flex px-3 py-3 ">
+                  <div className="w-[400px] h-[250px] bg-white rounded-[20px] flex px-3 py-3 "     style={{ boxShadow: " rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}}>
                     <div className="flex flex-col justify-center items-center w-[60%] ">
                       <div className="h-[100px] w-[100px] rounded-[50%] object-cover overflow-hidden">
                         <img src={avatar} />
