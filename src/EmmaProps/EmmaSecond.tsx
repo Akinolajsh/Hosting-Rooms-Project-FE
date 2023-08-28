@@ -1,7 +1,7 @@
 const EmmaSecond = () => {
   return (
     <div className="w-full h-[200px] flex justify-center items-center mt-[20px]">
-      <div className="w-[90%] h-full flex">
+      <div className="w-[80%] h-full flex">
           <div className="mr-[50px] w-[400px] h-[200px]">
             <h1 className="font-bold text-[18px]">One-to-one guidance from a Superhost</h1>
             <h2 className="mt-[5px]">
