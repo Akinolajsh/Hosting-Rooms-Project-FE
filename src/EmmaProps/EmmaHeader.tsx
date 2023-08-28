@@ -27,14 +27,14 @@ const Header = () => {
             />
           </div>
           <div className="flex items-center justify-center ">
-            <button className="font-semibold ">Ready to Airbnb it?</button>
+            <button className="font-semibold ">Ready to joeDalk it?</button>
             <div
               className="flex text-white w-[170px] h-[50px] border justify-center items-center
     bg-[#E41D57] rounded-md hover:cursor-pointer duration-300 ml-[20px] "
             >
               <BiHomeAlt2 style={{ fontSize: "30px", color: "white" }} />
               <div className=" flex items-center justify-center text-[17px] mt-[5px] font-semibold">
-                Airbnb Setup
+                joeDalk Setup
               </div>
             </div>
           </div>
@@ -52,14 +52,14 @@ const Header = () => {
             />
           </div>
           <div className="flex items-center justify-center ">
-            <button className="font-semibold ">Ready to Airbnb it?</button>
+            <button className="font-semibold ">Ready to joeDalk it?</button>
             <div
               className="flex text-white w-[170px] h-[50px] border justify-center items-center
     bg-[#E41D57] rounded-md hover:cursor-pointer duration-300 ml-[20px] "
             >
               <BiHomeAlt2 style={{ fontSize: "30px", color: "white" }} />
               <div className=" flex items-center justify-center text-[17px] mt-[5px] font-semibold">
-                Airbnb Setup
+                joeDalk Setup
               </div>
             </div>
           </div>

@@ -16,12 +16,12 @@ const EmmaSecond = () => {
             <h2 className="mt-[5px]">
               For your first booking, you can choose to welcome an experienced
               guest who has at least three stays and a good track record on
-              Airbnb.
+              joeDalk.
             </h2>
           </div>
 
           <div className="ml-[60px] w-[350px] h-[200px]">
-            <h1 className="font-bold text-[18px]">Specialized support from Airbnb</h1>
+            <h1 className="font-bold text-[18px]">Specialized support from joeDalk</h1>
             <h2 className="mt-[5px]">
               New Hosts get one-tap access to specially trained Community
               Support agents who can help with everything from account issues to

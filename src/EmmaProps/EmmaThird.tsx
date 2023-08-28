@@ -8,20 +8,20 @@ const EmmaThird = () => {
         {/*write up*/}
         <div className="flex justify-center flex-col">
           <h1 className="text-[40px] text-[#E41D57] text-center font-bold">
-            air<span className="text-[40px] text-black font-bold ">cover</span>
+            joe<span className="text-[40px] text-black font-bold ">cover</span>
           </h1>
           <h3 className="text-center leading-[1px] text-[17px] font-medium">
             for Hosts
           </h3>
           <h1 className="text-center text-[40px] font-semibold mt-[20px]">
-            Airbnb it with top‑to‑bottom protection
+            joeDalk it with top‑to‑bottom protection
           </h1>
         </div>
         {/*down*/}
         <div className="w-[80%] h-[50px] border-b-2 flex justify-between mt-[50px]">
           <div></div>
           <div className="flex justify-center items-center mb-[10px]">
-            <nav className="text-[20px] mr-[70px]">Airbnb</nav>
+            <nav className="text-[20px] mr-[70px]">joeDalk</nav>
             <nav className="text-[20px]">Competitors</nav>
           </div>
         </div>
@@ -34,7 +34,7 @@ const EmmaThird = () => {
             <div className="mt-[20px] pb-[30px] text-left font-light">
               Our comprehensive verification system checks details such as name,{" "}
               <br /> address, government ID and more to confirm the identity of
-              guests <br /> who book on Airbnb.
+              guests <br /> who book on joeDalk.
             </div>
           </div>
           <div className="flex  pt-[20px]">
@@ -74,7 +74,7 @@ const EmmaThird = () => {
               $3M damage protection
             </div>
             <div className="mt-[20px] pb-[30px] text-left font-light">
-              Airbnb reimburses you for damage caused by guests to your home{" "}
+              joeDalk reimburses you for damage caused by guests to your home{" "}
               <br /> and belongings and includes these specialized protections:
             </div>
           </div>
