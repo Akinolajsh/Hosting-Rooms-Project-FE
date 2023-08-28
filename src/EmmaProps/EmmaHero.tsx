@@ -4,7 +4,7 @@ import img from "../assets/pexels-suzy-hazelwood-1098526 (1).jpg";
 const EmmaHero = () => {
   return (
     <div className="w-[100%] h-[600px] flex justify-center items-center">
-      <div className="w-[90%] h-full flex justify-between items-center ">
+      <div className="w-[80%] h-full flex justify-between items-center ">
         {/*right*/}
         <div className="flex justify-center items-center flex-col w-[40%] h-full">
           <div className="text-[50px] font-bold text-[#E41D57]">Airbnb it.</div>
@@ -23,7 +23,7 @@ const EmmaHero = () => {
             <div className="w-[30%] h-full bg-[black] rounded-md hover:cursor-pointer"></div>
           </div>
 
-          <div className="underline hover:cursor-pointer mb-[30px]">
+          <div className="underline hover:cursor-pointer mb-[30px] text-[14px] font-light">
             Learn how we estimate your earnings
           </div>
           {/*search*/}
