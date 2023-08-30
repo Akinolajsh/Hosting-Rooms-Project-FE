@@ -2,7 +2,11 @@ import {BsExclamationCircle, BsPersonCircle} from "react-icons/bs"
 import {LiaGreaterThanSolid, LiaLessThanSolid} from "react-icons/lia"
 import {GiHypersonicBolt} from "react-icons/gi"
 import {TbBookmark} from "react-icons/tb"
-const DashBord = () => {
+import pix from "../assets/jecint.jpeg"
+import picture from "../assets/jecin.jpeg"
+import img from "../assets/jeci.jpg"
+
+const DashBoard = () => {
   return (
     <div className="w-[100%] h-[100vh]">
      
@@ -39,7 +43,39 @@ const DashBord = () => {
             </div>
             <div className="text-[#222222] font-light   ">It's time to review a couple of current settings.</div>
             {/* smallCard */}
-              <div className="mt-[100px]">
+              <div className="mt-[100px] flex gap-[15px]">
+                <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
+                  <div>
+                    <TbBookmark className = "text-[35px]"/>
+                  </div>
+                  <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
+                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
+                </div>
+                <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
+                  <div>
+                    <TbBookmark className = "text-[35px]"/>
+                  </div>
+                  <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
+                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
+                </div>
+                <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
+                  <div>
+                    <TbBookmark className = "text-[35px]"/>
+                  </div>
+                  <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
+                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
+                </div>
+                <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
+                  <div>
+                    <TbBookmark className = "text-[35px]"/>
+                  </div>
+                  <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
+                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
+                </div>
                 <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
                   <div>
                     <TbBookmark className = "text-[35px]"/>
@@ -82,7 +118,17 @@ const DashBord = () => {
               {/* end smallestCard */}
 
               {/*end LogCard */}
-              <div className="w-[300px] h-[320px] bg-[#e9e4e4] rounded-[15px] mt-[40px]"></div>
+          <div className="flex gap-[15px]">
+          <img className="w-[300px] h-[320px] bg-[#e9e4e4] rounded-[15px] mt-[40px] object-cover"
+              src={pix}
+              />
+              <img className="w-[300px] h-[320px] bg-[#e9e4e4] rounded-[15px]  object-cover mt-[40px]"
+              src={picture}
+              />
+              <img className="w-[300px] h-[320px] bg-[#e9e4e4] rounded-[15px] mt-[40px] object-cover"
+              src={img} alt={img}
+              />
+          </div>
               {/* LogCard */}
 
             </div>
@@ -93,4 +139,4 @@ const DashBord = () => {
   )
 }
 
-export default DashBord
+export default DashBoard

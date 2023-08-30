@@ -32,6 +32,18 @@ const ViewAllRooms = () => {
                     <FaAngleDown className="text-[15px] text-[black] font-bold mt-[4px]"/>
                     </div>
                 </div>
+                <div className="border-[1px] border-[silver] flex justify-center  items-center w-[180px] h-[40px] rounded-[20px] p-1 hover:cursor-pointer hover:border-[2px] hover:border-[black]  ">
+                    <div className="text-[14px] font-light text-black  ">Rooms and Beds</div>
+                    <div>
+                    <FaAngleDown className="text-[15px] text-[black] font-bold mt-[4px]"/>
+                    </div>
+                </div>
+                <div className="border-[1px] border-[silver] flex justify-center  items-center w-[180px] h-[40px] rounded-[20px] p-1 hover:cursor-pointer hover:border-[2px] hover:border-[black]  ">
+                    <div className="text-[14px] font-light text-black  ">Rooms and Beds</div>
+                    <div>
+                    <FaAngleDown className="text-[15px] text-[black] font-bold mt-[4px]"/>
+                    </div>
+                </div>
                   {/*end circle  */}
             </div>
             {/*end search */}
@@ -130,46 +142,44 @@ const ViewAllRooms = () => {
                 <div className="">
                         <GrInProgress className="text-[#b6b2b2] text-[13px] hover:cursor-pointer "/>
                     </div>
-                    <div className="text-[13px] text-[#222020] font-light  ">In Progress </div>
+                    <div className="text-[13px] text-[#222020] font-light mr-[20px] ">In Progress </div>
                    
                 </div>
                 {/* end Inprogress */}
 
                 {/* <finish></finish> */}
                 <div>
-                    <div className="text-[#1a1919] text-[14px] border-[1px] border-[black] rounded-[7px] p-[7px] font-semibold">Finish</div>
+                    <div className="text-[#1a1919] text-[14px] border-[1px] border-[black] rounded-[7px] p-[7px] mr-[95px]  font-semibold">Finish</div>
                 </div>
                 {/*end <finish></finish> */}
 
                 {/* <BigDiv></BigDiv> */}
-                <div className="flex gap-[54px] items-center p-3 border-b-[1px] border-b-[#d4cccc">
+                <div className="flex  items-center p-3 border-b-[1px] border-b-[#d4cccc">
                     <div className="flex justify-center items-center gap-[5px]">
                     <div >
                         <AiOutlineCheckCircle className="text-[#b6b2b2] text-[15px] hover:cursor-pointer "/>
                         </div>
-                        <div className="text-[15px] text-[#181717] font-light "> Off</div>
+                        <div className="text-[15px] text-[#181717] font-light mr-[100px]  "> Off</div>
                     
                     </div>
 
                     <div className="">
-                        <div className="text-[14px]-semibold text-[black] ">1</div>
+                        <div className="mr-[80px] text-[14px]-semibold text-[black] ">1</div>
                     </div>
 
                     <div className="">
-                        <div className="text-[14px] text-[black] font-light"> 1</div>
+                        <div className="text-[14px] text-[black] font-light mr-[70px]"> 1</div>
                     </div>
 
                     <div className="">
-                        <div className="text-[14px] text-[black] font-light"> 1.5</div>
+                        <div className="mr-[40px] text-[14px] text-[black] font-light"> 1.5</div>
                     </div>
 
                     <div className="flex">
-                        <div className="text-[13px] font-light text-[black] "> Ikeja, Nigeria</div>
+                        <div className="mr-[30px] text-[13px] font-light text-[black] "> Ikeja, Nigeria</div>
                     </div>
 
-                    <div>
-                        <MdOutlineSettings className="text-[20px] font-bold text-[#1d1c1c] hover:cursor-pointer hover:text-[black] transition-all"/>
-                    </div>
+                    
                 </div>
                 {/* <BigDiv></BigDiv> */}
             </div>
