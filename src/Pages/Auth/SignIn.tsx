@@ -30,8 +30,12 @@ const SignIn = () => {
     const {email, password} = data
 
     signIN({email, password}).then((res : any)=>{
-      navigate("/")
+      if(res){
+        navigate("/")
       dispatch( createUser(res))
+      }else{
+        navigate("/sign-in")
+      }
     })
 
   })
