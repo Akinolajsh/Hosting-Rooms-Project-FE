@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../Components/Common/Layout";
-import DetailsPage from "../Pages/Screen/Users/DetailsPage";
 import HostRoom from "../Pages/Screen/HostRoom";
 import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
@@ -34,16 +33,14 @@ export const mainRoute = createBrowserRouter([
   },
   {
     path: "/detail",
-    element: <Description/>,
+    element: <Description />,
   },
   {
     path: "/admin-dashboard",
-    element: <DashBord/>,
-    children: [
-      {
-        index: true,
-        path: "/view-all-rooms",
-      element: <ViewAllRooms/>,      }
-    ]
-  }
+    element: <DashBord />,
+  },
+  {
+    path: "/view-all-rooms",
+    element: <ViewAllRooms />,
+  },
 ]);
