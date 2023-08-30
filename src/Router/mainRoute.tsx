@@ -7,6 +7,7 @@ import SignIn from "../Pages/Auth/SignIn";
 import HomePage from "../Pages/Screen/Users/HomePage";
 import Description from "../Pages/Screen/Users/Description";
 import DashBord from "../Pages/DashBord";
+import ViewAllRooms from "../Pages/ViewAllRooms";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -37,6 +38,12 @@ export const mainRoute = createBrowserRouter([
   },
   {
     path: "/admin-dashboard",
-    element: <DashBord/>
+    element: <DashBord/>,
+    children: [
+      {
+        index: true,
+        path: "/view-all-rooms",
+      element: <ViewAllRooms/>,      }
+    ]
   }
 ]);

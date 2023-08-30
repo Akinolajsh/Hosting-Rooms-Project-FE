@@ -16,8 +16,6 @@ import { PiLightbulb, PiCoffee, PiFlowerTulipDuotone } from "react-icons/pi";
 import avatar from "../../../assets/dummy-prod-1.jpg";
 
 const About = () => {
-
-  
   const data: any = [
     {
       num: "2",
@@ -298,7 +296,7 @@ const About = () => {
           {/* OtherSide */}
           <div className="w-[50%] flex mt-[200px] ml-[220px] ">
             <div
-              className="w-[350px] h-[280px] bg-white rounded-[20px] flex px-6 py-6 flex-col"
+              className="w-[350px] h-[280px] bg-white rounded-[20px] flex px-6 py-6 flex-col static"
               style={{
                 boxShadow:
                   " rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
