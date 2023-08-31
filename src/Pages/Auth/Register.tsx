@@ -48,10 +48,14 @@ const Register = () => {
     formData.append("name", name)
     formData.append("email", email)
     formData.append("password", password)
-    formData.append("avatar", image)
+    formData.append("image", image)
 
-    createAuth(formData).then(()=>{
-      navigate("/sign-in")
+    createAuth(formData).then((res)=>{
+      if(res){
+        navigate("/sign-in")
+      }else{
+        navigate("/register")
+      }
     })
 
   })
