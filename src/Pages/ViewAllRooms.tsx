@@ -2,7 +2,7 @@ import { AiOutlineSearch, AiOutlineCaretUp,AiOutlineCheckCircle  } from "react-i
 import {FaCaretDown, FaAngleDown} from "react-icons/fa"
 import {MdOutlineSettings} from "react-icons/md"
 import {GrInProgress} from "react-icons/gr"
-
+import pix from "../assets/je.jpg"
 const ViewAllRooms = () => {
   return (
     <div className="bg-white w-[100%] h-[100vh] flex justify-center   ">
@@ -132,7 +132,7 @@ const ViewAllRooms = () => {
                     <input className="hover:cursor-pointer"
                      type="checkbox" />
                      <img className="w-[60px] h-[50px] border rounded-[10px] "
-                     src="" alt="" />
+                     src={pix} alt={pix} />
                     <div className="text-[13px] font-bold hover:cursor-pointer ">Jecinta </div>
                    
                 </div>
