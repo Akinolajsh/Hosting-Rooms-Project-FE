@@ -8,7 +8,7 @@ import img from "../assets/jeci.jpg"
 import { Link } from "react-router-dom"
 
 
-const DashBoard = () => {
+const DashBord = () => {
   return (
     <div className="w-[100%] h-[100vh]">
      
@@ -175,4 +175,4 @@ const DashBoard = () => {
   )
 }
 
-export default DashBoard
+export default DashBord
