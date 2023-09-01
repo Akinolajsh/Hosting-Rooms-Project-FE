@@ -5,7 +5,8 @@ import {TbBookmark} from "react-icons/tb"
 import pix from "../assets/jecint.jpeg"
 import picture from "../assets/jecin.jpeg"
 import img from "../assets/jeci.jpg"
-import pin from "../assets/jecinta.jpg"
+import { Link } from "react-router-dom"
+
 
 const DashBoard = () => {
   return (
@@ -26,7 +27,9 @@ const DashBoard = () => {
           <BsExclamationCircle className="text-[22px] font-bold text-red-700 mt-[5px] "/>
         </div>
       </div>
-      <div className="text-[15px] font-semibold underline mt-[2px] ">Start</div>
+     <Link to="/detail">
+     <div className="text-[15px] font-semibold underline mt-[2px] ">Start</div>
+     </Link>
          </div>
             {/*end litte border  */}
         </div>
@@ -165,7 +168,9 @@ const DashBoard = () => {
             </div>
           </div>
         </div>
+
  {/* third private name() { */}
+ 
     </div>
   )
 }
