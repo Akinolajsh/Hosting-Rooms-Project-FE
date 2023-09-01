@@ -1,83 +1,82 @@
 import {
-    TbBrandAirbnb,
-    TbToolsKitchen,
-    TbWashMachine,
-    TbPool,
-  } from "react-icons/tb";
-  import { AiFillStar, AiOutlineCar } from "react-icons/ai";
-  import { GoShieldLock } from "react-icons/go";
-  import { LiaBedSolid } from "react-icons/lia";
-  import { FaShower } from "react-icons/fa";
-  import { BiHome, BiWifi } from "react-icons/bi";
-  import { BsBalloon } from "react-icons/bs";
-  import { FiShoppingBag } from "react-icons/fi";
-  import { GiOfficeChair } from "react-icons/gi";
-  import { PiLightbulb, PiCoffee, PiFlowerTulipDuotone } from "react-icons/pi";
-import avatar from "../../../assets/dummy-prod-1.jpg"
+  TbBrandAirbnb,
+  TbToolsKitchen,
+  TbWashMachine,
+  TbPool,
+} from "react-icons/tb";
+import { AiFillStar, AiOutlineCar } from "react-icons/ai";
+import { GoShieldLock } from "react-icons/go";
+import { LiaBedSolid } from "react-icons/lia";
+import { FaShower } from "react-icons/fa";
+import { BiHome, BiWifi } from "react-icons/bi";
+import { BsBalloon } from "react-icons/bs";
+import { FiShoppingBag } from "react-icons/fi";
+import { GiOfficeChair } from "react-icons/gi";
+import { PiLightbulb, PiCoffee, PiFlowerTulipDuotone } from "react-icons/pi";
+import avatar from "../../../assets/dummy-prod-1.jpg";
 
 const About = () => {
+  const data: any = [
+    {
+      num: "2",
+      icon: <LiaBedSolid />,
+      text: "bed",
+    },
+    {
+      icon: <FaShower />,
+      text: "Private attached bathroom",
+    },
+    {
+      icon: <BiHome />,
+      text: "Host and other guests may be here",
+    },
+  ];
 
-    const data: any = [
-        {
-          num: "2",
-          icon: <LiaBedSolid />,
-          text: "bed",
-        },
-        {
-          icon: <FaShower />,
-          text: "Private attached bathroom",
-        },
-        {
-          icon: <BiHome />,
-          text: "Host and other guests may be here",
-        },
-      ];
-    
-      const data1: any = [
-        {
-          icons: <FaShower />,
-          title: "Room in a cottage",
-          text: "Your own room in a home, plus access to shared spaces.",
-        },
-        {
-          icons: <LiaBedSolid />,
-          title: "Roberta is a Superhost",
-          text: "Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.",
-        },
-        {
-          icons: <FaShower />,
-          title: "Free cancellation before Sep 4.",
-        },
-      ];
-    
-      const data2: any = [
-        {
-          iconx: <BsBalloon />,
-          text: "Born in the 60s",
-        },
-        {
-          iconx: <FiShoppingBag />,
-          text: "My work: Roberta Yoga Massage, UlaBiná, Rede TVT, João do Grão, Body Therapist, TVT - Worker TV, Franmi / Scene 1 Take 2, Na Batalha",
-        },
-        {
-          iconx: <PiLightbulb />,
-          text: "Favorite song in high school: Ovelha negra, Rita Lee",
-        },
-        {
-          iconx: <PiLightbulb />,
-          text: "Fun fact: ?",
-        },
-        {
-          iconx: <PiCoffee />,
-          text: "What's for breakfast: Fruits juice, milk,eggs vegan options",
-        },
-      ];
+  const data1: any = [
+    {
+      icons: <FaShower />,
+      title: "Room in a cottage",
+      text: "Your own room in a home, plus access to shared spaces.",
+    },
+    {
+      icons: <LiaBedSolid />,
+      title: "Roberta is a Superhost",
+      text: "Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.",
+    },
+    {
+      icons: <FaShower />,
+      title: "Free cancellation before Sep 4.",
+    },
+  ];
+
+  const data2: any = [
+    {
+      iconx: <BsBalloon />,
+      text: "Born in the 60s",
+    },
+    {
+      iconx: <FiShoppingBag />,
+      text: "My work: Roberta Yoga Massage, UlaBiná, Rede TVT, João do Grão, Body Therapist, TVT - Worker TV, Franmi / Scene 1 Take 2, Na Batalha",
+    },
+    {
+      iconx: <PiLightbulb />,
+      text: "Favorite song in high school: Ovelha negra, Rita Lee",
+    },
+    {
+      iconx: <PiLightbulb />,
+      text: "Fun fact: ?",
+    },
+    {
+      iconx: <PiCoffee />,
+      text: "What's for breakfast: Fruits juice, milk,eggs vegan options",
+    },
+  ];
 
   return (
-    <div  className="w-full flex justify-center items-center mt-5">
-         <div className="w-[80%] justify-center items-center flex flex-col ">
-         <div className="w-full justify-center items-center  h-[2500px] ">
-          <div className="w-[60%] flex flex-col   mt-3 border-b-[1px] border-[red]  ">
+    <div className="w-full flex justify-center items-center mt-5">
+      <div className="w-[80%] justify-center items-center flex flex-col ">
+        <div className=" justify-center flex  h-[2500px] w-[50%]">
+          <div className=" flex flex-col   mt-3 border-b-[1px] ">
             <div className="justify-between flex  items-end text-[20px] font-semibold">
               {" "}
               Room in a cottage hosted by Roberta{" "}
@@ -120,9 +119,15 @@ const About = () => {
               <div className="h-[80px] w-full flex  items-center gap-4 text-[23px] font-medium">
                 Meet your host
               </div>
-              <div className="h-[1000px] w-full bg-[#F0EFE9] rounded-[20px] flex justify-center items-center ">
+              <div className="h-[1000px] w-full bg-slate-200 rounded-[20px] flex justify-center items-center flex-1">
                 <div className=" h-[90%] flex flex-col items-center  ">
-                  <div className="w-[400px] h-[250px] bg-white rounded-[20px] flex px-3 py-3 ">
+                  <div
+                    className="w-[400px] h-[250px] bg-white rounded-[20px] flex px-3 py-3 "
+                    style={{
+                      boxShadow:
+                        " rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+                    }}
+                  >
                     <div className="flex flex-col justify-center items-center w-[60%] ">
                       <div className="h-[100px] w-[100px] rounded-[50%] object-cover overflow-hidden">
                         <img src={avatar} />
@@ -289,12 +294,64 @@ const About = () => {
             </div>
           </div>
           {/* OtherSide */}
-          <div className="w-[40%]"></div>
+          <div className="w-[50%] flex mt-[200px] ml-[220px] ">
+            <div
+              className="w-[350px] h-[280px] bg-white rounded-[20px] flex px-6 py-6 flex-col static"
+              style={{
+                boxShadow:
+                  " rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+              }}
+            >
+              <div className="h-[50px] flex  items-center">
+                <div className="flex-1 text-[20px] font-medium flex gap-1">
+                  <div>55</div>
+                  <div className="text-[15px] flex items-end mb-1 text-[silver] font-light">
+                    night
+                  </div>
+                </div>
+                <div
+                  className="flex justify-centeric
+          "
+                >
+                  <div className="flex justify-center items-center text-[15px] font-medium">
+                    <div>
+                      <AiFillStar className="flex " />
+                    </div>
+                    <div className="mr-2">4.89</div>
+                  </div>
+                  <div className="underline text-[silver] text-[15px]">
+                    9 reviews
+                  </div>
+                </div>
+              </div>
+              <div className="h-[115px]  rounded-[10px] grid grid-rows-2">
+                <div className="grid grid-cols-2">
+                  <div className="border-l-[1px] border-t-[1px] border-[black] rounded-tl-[10px] flex justify-center px-3 flex-col">
+                    <div className="text-[10px] font-semibold">CHECK-IN</div>
+                    <div className="text-[silver] text-[15px]">9/5/2023</div>
+                  </div>
+                  <div className="border-t-[1px] border-r-[1px] border-[black] border-l-[1px] rounded-tr-[10px]  flex justify-center px-3 flex-col">
+                    {" "}
+                    <div className="text-[10px] font-semibold">CHECKOUT</div>
+                    <div className="text-[silver] text-[15px]">Add date</div>
+                  </div>
+                </div>
+                <div className="border-[1px] border-[black] rounded-bl-[10px] rounded-br-[10px] flex flex-col px-3 justify-center ic">
+                  {" "}
+                  <div className="text-[10px] font-semibold">GUESTS</div>
+                  <div className="text-[silver] text-[15px]">1 guest</div>
+                </div>
+              </div>
+              <div className="h-[40px] bg-[#F62F58] mt-5 rounded-[10px] flex justify-center items-center text-white font-medium text-[15px]">
+                Check availability
+              </div>
+            </div>
+          </div>
           {/* OtherSide */}
         </div>
-         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

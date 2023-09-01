@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../Components/Common/Layout";
-import DetailsPage from "../Pages/Screen/Users/DetailsPage";
 import HostRoom from "../Pages/Screen/HostRoom";
 import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
 import HomePage from "../Pages/Screen/Users/HomePage";
 import Description from "../Pages/Screen/Users/Description";
-import Congratulatory from "../Pages/Screen/Users/congratulatory";
+import DashBord from "../Pages/DashBord";
+import ViewAllRooms from "../Pages/ViewAllRooms";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -32,12 +32,16 @@ export const mainRoute = createBrowserRouter([
     element: <SignIn />,
   },
   {
-    path: "/details",
-    element: <DetailsPage />,
+    path: "/detail",
+    element: <Description />,
   },
   {
-    path: "/detail",
-    element: <Description/>,
+    path: "/admin-dashboard",
+    element: <DashBord />,
+  },
+  {
+    path: "/view-all-rooms",
+    element: <ViewAllRooms />,
   },
   
 ]);

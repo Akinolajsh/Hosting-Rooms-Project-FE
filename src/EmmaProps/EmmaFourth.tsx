@@ -8,7 +8,7 @@ const EmmaFourth = () => {
     <div className="w-full h-[600px] flex justify-center items-center ">
       <div className="w-[80%] h-full flex justify-center items-center flex-col">
         <h1 className="text-center font-bold text-[40px] mb-[20px]">
-          Introducing Airbnb-friendly apartments
+          Introducing joeDalk-friendly apartments
         </h1>
         <div className="flex justify-center w-full  h-[400px] ">
           <div className="mr-[30px]">
@@ -52,7 +52,7 @@ const EmmaFourth = () => {
 
         <div className="text-center text-[20px] leading-1">
           We’ve partnered with apartment buildings across the US that let you
-          rent a place to live and <br /> Airbnb it part-time. Explore available
+          rent a place to live and <br /> joeDalk it part-time. Explore available
           apartments and find out what you can earn.
         </div>
         <button className="w-[120px] h-[40px] flex justify-center items-center border rounded-md border-black

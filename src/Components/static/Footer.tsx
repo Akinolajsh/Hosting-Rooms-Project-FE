@@ -19,7 +19,7 @@ const Footer = () => {
             Get help with a safety issue
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
-            AirCover
+           joeCover
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
             Combating discrimination
@@ -40,10 +40,10 @@ const Footer = () => {
             Hosting
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
-            Airbnb your home
+            joeDalk your home
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
-            AirCover for host
+            joeCover for host
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
             Hosting resources
@@ -55,13 +55,13 @@ const Footer = () => {
             Hosting responsibly
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
-            Airbnb-friendily apartments
+            joeDalk-friendily apartments
           </nav>
         </div>
 
         <div>
           <nav className="font-medium text-[16px] pt-[10px] pb-[6px]">
-            Airbnb
+            joeDalk
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
             News room
@@ -79,7 +79,7 @@ const Footer = () => {
             Gift cards
           </nav>
           <nav className="hover:underline hover:cursor-pointer text-[15px] pb-[10px] font-light">
-            Airbnb.org disaster relief
+            joeDalk.org disaster relief
           </nav>
         </div>
       </div>
@@ -87,7 +87,7 @@ const Footer = () => {
       {/*down*/}
       <div className="w-[80%] h-[10vh] m-[10px] flex justify-between items-center">
         <div>
-          <span className="text-[14px]">© 2023 Airbnb, Inc.</span>{" "}
+          <span className="text-[14px]">© 2023 joeDalk, Inc.</span>{" "}
           <span className="hover:underline hover:cursor-pointer ml-[5px] text-[13px] duration-300">
             {" "}
             Terms

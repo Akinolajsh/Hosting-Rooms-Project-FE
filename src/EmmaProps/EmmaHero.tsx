@@ -7,7 +7,7 @@ const EmmaHero = () => {
       <div className="w-[80%] h-full flex justify-between items-center ">
         {/*right*/}
         <div className="flex justify-center items-center flex-col w-[40%] h-full">
-          <div className="text-[50px] font-bold text-[#E41D57]">Airbnb it.</div>
+          <div className="text-[50px] font-bold text-[#E41D57]">joeDalk it.</div>
           <div className="text-[50px] font-bold leading-[0.9]">
             You could earn
           </div>

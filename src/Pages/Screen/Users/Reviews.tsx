@@ -44,7 +44,7 @@ const Reviews = () => {
 
   return (
     <div className="w-full flex justify-center items-center  h-[800px] ">
-      <div className="w-[80%] justify-center flex flex-col border-[#e1e0e0] border-t-[1px] h-full border-b-[1px]">
+      <div className="w-[80%] justify-center flex flex-col border-[#e1e0e0] border-t-[1px] h-full ">
         <div className="w-full h-[200px]  ">
           <div className="flex gap-2  items-center my-5">
             <div>
