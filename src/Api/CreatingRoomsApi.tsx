@@ -17,9 +17,10 @@ export const createRooms =async(data: any, userID: any)=>{
 
 export const viewAllCreateRooms =async()=>{
     try {
-        return await axios.get(`${url}/viewRooms`).then((res:any)=>{
-            return res.data.data
-        })
+       return await axios.get(`${url}/viewRooms`).then((res:any)=>{
+       return res.data.data
+       })
+     
         } catch (error) {
             console.log(error)
         }
