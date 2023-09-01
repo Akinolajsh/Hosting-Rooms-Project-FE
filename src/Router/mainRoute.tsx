@@ -6,6 +6,7 @@ import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
 import HomePage from "../Pages/Screen/Users/HomePage";
 import Description from "../Pages/Screen/Users/Description";
+import Congratulatory from "../Pages/Screen/Users/congratulatory";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -38,4 +39,5 @@ export const mainRoute = createBrowserRouter([
     path: "/detail",
     element: <Description/>,
   },
+  
 ]);
