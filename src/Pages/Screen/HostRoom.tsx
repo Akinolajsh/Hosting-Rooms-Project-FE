@@ -7,6 +7,7 @@ import EmmaHero from "../../EmmaProps/EmmaHero";
 import EmmaSecond from "../../EmmaProps/EmmaSecond";
 import EmmaSixth from "../../EmmaProps/EmmaSixth";
 import EmmaThird from "../../EmmaProps/EmmaThird";
+import Congratulatory from "./Users/congratulatory";
 
 const HostRoom = () => {
   return (
@@ -19,6 +20,7 @@ const HostRoom = () => {
       <EmmaFourth />
       <EmmaFifth />
       <EmmaSixth />
+      <Congratulatory/>
       <Footer/>
     </div>
   );

@@ -5,6 +5,8 @@ import {TbBookmark} from "react-icons/tb"
 import pix from "../assets/jecint.jpeg"
 import picture from "../assets/jecin.jpeg"
 import img from "../assets/jeci.jpg"
+import { Link } from "react-router-dom"
+
 
 const DashBoard = () => {
   return (
@@ -25,7 +27,9 @@ const DashBoard = () => {
           <BsExclamationCircle className="text-[22px] font-bold text-red-700 mt-[5px] "/>
         </div>
       </div>
-      <div className="text-[15px] font-semibold underline mt-[2px] ">Start</div>
+     <Link to="/detail">
+     <div className="text-[15px] font-semibold underline mt-[2px] ">Start</div>
+     </Link>
          </div>
             {/*end litte border  */}
         </div>
@@ -48,8 +52,18 @@ const DashBoard = () => {
                   <div>
                     <TbBookmark className = "text-[35px]"/>
                   </div>
-                  <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
-                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-semibold mt-[10px] ">Turn Instant Book
+                 
+                  </div>
+                  <div className="text-[13px] font-semibold "> on or off</div>
+                  <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
+                </div>
+                <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
+                  <div>
+                    <TbBookmark className = "text-[35px]"/>
+                  </div>
+                  <div className="text-[13px] font-semibold mt-[10px] ">Turn Instant Book</div>
+                  <div className="text-[13px] font-semibold ">on or off</div>
                   <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
                 </div>
                 <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
@@ -57,7 +71,7 @@ const DashBoard = () => {
                     <TbBookmark className = "text-[35px]"/>
                   </div>
                   <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
-                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-semibold ">on or off</div>
                   <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
                 </div>
                 <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
@@ -65,7 +79,7 @@ const DashBoard = () => {
                     <TbBookmark className = "text-[35px]"/>
                   </div>
                   <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
-                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-semibold ">on or off</div>
                   <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
                 </div>
                 <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
@@ -73,15 +87,7 @@ const DashBoard = () => {
                     <TbBookmark className = "text-[35px]"/>
                   </div>
                   <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
-                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
-                  <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
-                </div>
-                <div className="w-[200px] h-[170px] bg-[#FFFFFF]  rounded-[15px] p-2">
-                  <div>
-                    <TbBookmark className = "text-[35px]"/>
-                  </div>
-                  <div className="text-[13px] font-semibold mt-[10px]">Turn Instant Book</div>
-                  <div className="text-[13px] font-semibold mt-[10px]">on or off</div>
+                  <div className="text-[13px] font-semibold">on or off</div>
                   <div className="text-[13px] font-light text-[grey]">Choose how guests will Book</div>
                 </div>
               </div>
@@ -118,23 +124,53 @@ const DashBoard = () => {
               {/* end smallestCard */}
 
               {/*end LogCard */}
-          <div className="flex gap-[15px]">
-          <img className="w-[300px] h-[320px] bg-[#e9e4e4] rounded-[15px] mt-[40px] object-cover"
-              src={pix}
+          <div className=" mt-[70px]">
+
+          <div className="font-semibold text-[20px]">
+            Resources and tips
+          </div>
+
+         <div className="flex gap-[20px] mt-[2opx] ">
+
+         <div className="w-[300px] h-[320px border mt-[40px] rounded-[15px] shadow-xl hover:cursor-pointer overflow-hidden">
+            <img className="w-full h-[250px] rounded-[15px]  object-cover hover:scale-[1.1] duration-500"
+              src={picture} 
               />
-              <img className="w-[300px] h-[320px] bg-[#e9e4e4] rounded-[15px]  object-cover mt-[40px]"
-              src={picture}
+              <div className="text-[15px] font-semibold flex justify-center mt-[30px]  ">How to get paid for Hosting</div>
+            </div>
+         <div className="w-[300px] h-[320px border mt-[40px] rounded-[15px] shadow-xl hover:cursor-pointer overflow-hidden">
+            <img className="w-full h-[250px] rounded-[15px]  object-cover hover:scale-[1.1] duration-500"
+              src={pix} 
               />
-              <img className="w-[300px] h-[320px] bg-[#e9e4e4] rounded-[15px] mt-[40px] object-cover"
-              src={img} alt={img}
+              <div className="text-[15px] font-semibold flex justify-center mt-[30px]  ">How to take great photos with 
+              ur phone</div>
+            </div>
+         <div className="w-[300px] h-[320px border mt-[40px] rounded-[15px] shadow-xl hover:cursor-pointer overflow-hidden">
+            <img className="w-full h-[250px] rounded-[15px]  object-cover hover:scale-[1.1] duration-500"
+              src={img} 
               />
+              <div className="text-[15px] font-semibold flex justify-center mt-[30px]  ">The best way to set ur
+               calenders and bookings setting</div>
+            </div>
+         <div className="w-[300px] h-[320px border mt-[40px] rounded-[15px] shadow-xl hover:cursor-pointer overflow-hidden">
+            <img className="w-full h-[250px] rounded-[15px]  object-cover hover:scale-[1.1] duration-500"
+              src={pix} 
+              />
+              <div className="text-[15px] font-semibold flex justify-center mt-[30px]  ">How to write a listing 
+              descriptions that works</div>
+            </div>
+             
+         </div>
+
           </div>
               {/* LogCard */}
 
             </div>
           </div>
         </div>
+
  {/* third private name() { */}
+ 
     </div>
   )
 }

@@ -34,6 +34,16 @@ const SignIn = () => {
       dispatch(createUser(res));
     });
   });
+    signIN({email, password}).then((res : any)=>{
+      if(res){
+        navigate("/")
+      dispatch( createUser(res))
+      }else{
+        navigate("/sign-in")
+      }
+    })
+
+  })
 
   return (
     // container
