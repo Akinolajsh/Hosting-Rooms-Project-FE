@@ -3,10 +3,11 @@ import Layout from "../Components/Common/Layout";
 import HostRoom from "../Pages/Screen/HostRoom";
 import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
-import HomePage from "../Pages/Screen/Users/HomePage";
 import Description from "../Pages/Screen/Users/Description";
 import DashBord from "../Pages/DashBord";
 import ViewAllRooms from "../Pages/ViewAllRooms";
+import LandingPage from "../Pages/Screen/Users/LandingPage";
+import CreateRooms from "../Pages/Screen/Admin/CreateRooms";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ export const mainRoute = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <LandingPage />,
       },
     ],
   },
@@ -42,5 +43,9 @@ export const mainRoute = createBrowserRouter([
   {
     path: "/view-all-rooms",
     element: <ViewAllRooms />,
+  },
+  {
+    path: "/create-room",
+    element: <CreateRooms />,
   },
 ]);

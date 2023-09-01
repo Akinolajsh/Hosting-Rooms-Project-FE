@@ -1,4 +1,4 @@
-import Footer from "../../Components/static/Footer";
+import Footer from "../../Components/Static/Footer";
 import EmmaFifth from "../../EmmaProps/EmmaFifth";
 import EmmaFirst from "../../EmmaProps/EmmaFirst";
 import EmmaFourth from "../../EmmaProps/EmmaFourth";

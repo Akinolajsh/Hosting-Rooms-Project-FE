@@ -75,7 +75,7 @@ const About = () => {
   return (
     <div className="w-full flex justify-center items-center mt-5">
       <div className="w-[80%] justify-center items-center flex flex-col ">
-        <div className=" justify-center flex  h-[2500px] w-[50%]">
+        <div className=" justify-center flex  h-[2500px] w-[50%] ">
           <div className=" flex flex-col   mt-3 border-b-[1px] ">
             <div className="justify-between flex  items-end text-[20px] font-semibold">
               {" "}
@@ -86,7 +86,7 @@ const About = () => {
             </div>
             <div className="flex justify-between items-center mt-4 ">
               {data?.map((props: any) => (
-                <div className="border-[1px] rounded-[10px] h-[80px] w-[200px]  px-[12px] py-[10px] justify-center items-center flex gap-3 ">
+                <div className="border-[1px] rounded-[10px] h-[80px] w-[200px]  px-[12px] py-[10px] justify-center items-center flex gap-5 ">
                   <div className="text-[30px]">{props.icon}</div>{" "}
                   <div className="text-[14px] font-semibold flex justify-center items-center gap-1">
                     <div>{props.num}</div>

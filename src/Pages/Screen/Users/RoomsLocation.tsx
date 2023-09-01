@@ -6,6 +6,7 @@ import grid002 from "../../../assets/grid002.webp";
 import grid003 from "../../../assets/grid003.webp";
 import grid004 from "../../../assets/grid004.webp";
 import grid005 from "../../../assets/grid005.webp";
+
 const RoomsLocation = () => {
   return (
     <div className="w-full flex justify-center items-center bg-yellow">
