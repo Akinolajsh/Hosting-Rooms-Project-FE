@@ -8,6 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { signIN } from "../../Api/authApi";
 import { useDispatch } from "react-redux";
 import { createUser } from "../../Global/GlobalState";
+import Swal from "sweetalert2"
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -29,16 +30,30 @@ const SignIn = () => {
   const onHandleSubmit = handleSubmit(async (data: any) => {
     const { email, password } = data;
 
-    signIN({ email, password }).then((res) => {
-      navigate("/");
-      dispatch(createUser(res));
-    });
-  });
     signIN({email, password}).then((res : any)=>{
       if(res){
         navigate("/")
       dispatch( createUser(res))
+      Swal.fire({
+        title: "Welcome back on the platform😊",
+        showClass: {
+          popup: "animate_animated animate_fadeInDown",
+        },
+        hideClass: {
+          popup: "animate_animated animate_fadeOutUp",
+        },
+      });
       }else{
+        Swal.fire({
+          title: "Error occured while signing in",
+          showClass: {
+            popup: "animate_animated animate_fadeInDown",
+          },
+          icon: "error",
+          hideClass: {
+            popup: "animate_animated animate_fadeOutUp",
+          },
+        });
         navigate("/sign-in")
       }
     })

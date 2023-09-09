@@ -1,13 +1,14 @@
 import axios from "axios"
 
-const url:string = "http://localhost:2659/api/v1"
+const url:string = "https://airbnb-zp0v.onrender.com/api/v1"
 
 export const createRooms =async(data: any, userID: any)=>{
     try {
    const config:any = {
         "content-type": "multipart/formdata"
     }
-    return await axios.post(`${url}/${userID}/createRoom`, config,data).then((res:any)=>{
+    return await axios.post(`${url}/${userID}/createRoom`, data , config).then((res:any)=>{
+        console.log("first: ", data)
         return res.data.data
     })
     } catch (error) {

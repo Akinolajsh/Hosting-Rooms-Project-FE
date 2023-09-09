@@ -1,6 +1,7 @@
 import { FaAirbnb } from "react-icons/fa";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scroll, setScroll] =useState<boolean>(false)
@@ -33,9 +34,11 @@ const Header = () => {
     bg-[#E41D57] rounded-md hover:cursor-pointer duration-300 ml-[20px] "
             >
               <BiHomeAlt2 style={{ fontSize: "30px", color: "white" }} />
-              <div className=" flex items-center justify-center text-[17px] mt-[5px] font-semibold">
+            <Link to="/create-room">
+            <div className=" flex items-center justify-center text-[17px] mt-[5px] font-semibold cursor-pointer">
                 joeDalk Setup
               </div>
+            </Link>
             </div>
           </div>
         </div>
@@ -58,9 +61,11 @@ const Header = () => {
     bg-[#E41D57] rounded-md hover:cursor-pointer duration-300 ml-[20px] "
             >
               <BiHomeAlt2 style={{ fontSize: "30px", color: "white" }} />
-              <div className=" flex items-center justify-center text-[17px] mt-[5px] font-semibold">
+              <Link to="/create-room">
+            <div className=" flex items-center justify-center text-[17px] mt-[5px] font-semibold cursor-pointer">
                 joeDalk Setup
               </div>
+            </Link>
             </div>
           </div>
         </div>

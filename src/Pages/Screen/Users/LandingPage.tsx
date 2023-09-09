@@ -10,9 +10,12 @@ import img8 from "../../../assets/grid001.webp";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
+// import { useTanRoom } from "../../../Hook/Room.";
+import { Link } from "react-router-dom";
 
 
 function SampleNextArrow(props:any) {
+
   const { className, style, onClick } = props;
   return (
     <div
@@ -38,6 +41,7 @@ function SamplePrevArrow(props:any) {
 
 
 const LandingPage = () => {
+  // const { rooms} = useTanRoom()
   const myArr:any = [
       { id: 2, IMG: img1, text: "Amazing pools" },
     { id: 5, IMG: img4, text: "Boat" },
@@ -61,7 +65,7 @@ const LandingPage = () => {
   }
 
   return (
-    <div
+                  <div
       className="
     w-full
     min-h-[100vh]
@@ -119,7 +123,12 @@ const LandingPage = () => {
             ))
         }
       </div>
-      <div className="
+
+
+
+
+
+            <div className="
       w-[95%]
       min-h-[100vh]
       ">
@@ -134,12 +143,14 @@ const LandingPage = () => {
           rounded-[10px]
           ">
             <Slider {...settings}>
-            <img src={img8} className="
+      <Link to="/detail">
+      <img src={img8} className="
             object-cover
             h-[100%]
             w-[100%]
         rounded-[10px]
             "/>
+      </Link>
             <img src={img8} className="
             object-cover
             h-[100%]
@@ -160,7 +171,7 @@ const LandingPage = () => {
               <div className="
               text-[15px]
               font-[500]
-              ">Dubai UAE</div>
+              ">Dublin</div>
             <div className="
             text-[grey]
             text-[15px]
@@ -184,6 +195,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+        
     </div>
   );
 };

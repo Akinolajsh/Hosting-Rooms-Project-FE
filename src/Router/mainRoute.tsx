@@ -4,10 +4,11 @@ import HostRoom from "../Pages/Screen/HostRoom";
 import Register from "../Pages/Auth/Register";
 import SignIn from "../Pages/Auth/SignIn";
 import Description from "../Pages/Screen/Users/Description";
-import DashBord from "../Pages/DashBord";
 import ViewAllRooms from "../Pages/ViewAllRooms";
 import LandingPage from "../Pages/Screen/Users/LandingPage";
 import CreateRooms from "../Pages/Screen/Admin/CreateRooms";
+import DashBoard from "../Pages/DashBord";
+import Congratulation from "../Pages/Screen/Users/congratulatory";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ export const mainRoute = createBrowserRouter([
   },
   {
     path: "/admin-dashboard",
-    element: <DashBord />,
+    element: <DashBoard />,
   },
   {
     path: "/view-all-rooms",
@@ -47,6 +48,10 @@ export const mainRoute = createBrowserRouter([
   {
     path: "/create-room",
     element: <CreateRooms />,
+  },
+  {
+    path: "/congrat",
+    element: < Congratulation/>,
   },
   
 ]);

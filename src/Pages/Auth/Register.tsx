@@ -8,6 +8,7 @@ import * as yup from "yup"
 import {useForm} from "react-hook-form"
 import {yupResolver} from "@hookform/resolvers/yup"
 import { createAuth } from "../../Api/authApi"
+import Swal from "sweetalert2"
 
 const Register = () => {
 
@@ -52,9 +53,28 @@ const Register = () => {
 
     createAuth(formData).then((res)=>{
       if(res){
+        Swal.fire({
+          title: "you have been registered succesfully😊",
+          showClass: {
+            popup: "animate_animated animate_fadeInDown",
+          },
+          hideClass: {
+            popup: "animate_animated animate_fadeOutUp",
+          },
+        });
         navigate("/sign-in")
       }else{
-        navigate("/register")
+        navigate("/")
+        Swal.fire({
+          title: "Error occured while registering 😢😢",
+          showClass: {
+            popup: "animate_animated animate_fadeInDown",
+          },
+          icon: "error",
+          hideClass: {
+            popup: "animate_animated animate_fadeOutUp",
+          },
+        });
       }
     })
 

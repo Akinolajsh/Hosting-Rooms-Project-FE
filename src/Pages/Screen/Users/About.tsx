@@ -14,8 +14,12 @@ import { FiShoppingBag } from "react-icons/fi";
 import { GiOfficeChair } from "react-icons/gi";
 import { PiLightbulb, PiCoffee, PiFlowerTulipDuotone } from "react-icons/pi";
 import avatar from "../../../assets/dummy-prod-1.jpg";
+import { useTanRoom } from "../../../Hook/Room.";
 
 const About = () => {
+
+  const {isLoading, rooms}= useTanRoom()
+
   const data: any = [
     {
       num: "2",
@@ -73,7 +77,15 @@ const About = () => {
   ];
 
   return (
-    <div className="w-full flex justify-center items-center mt-5">
+
+    <div>
+  {
+    isLoading ? (
+      <div>
+      isLoading...
+      </div>
+    ):(
+      <div className="w-full flex justify-center items-center mt-5">
       <div className="w-[80%] justify-center items-center flex flex-col ">
         <div className=" justify-center flex  h-[2500px] w-[50%] ">
           <div className=" flex flex-col   mt-3 border-b-[1px] ">
@@ -196,12 +208,7 @@ const About = () => {
                   About this place
                 </div>
                 <div className="text-[15px] font-light">
-                  Located close to the Tibetan Buddhist temple Odsal Ling, Toca
-                  is a space of retreat for those who wish to be near Sao Paulo
-                  and still have a good connection with nature. A house, built
-                  of wooden base, brick and glass is surrounded by a green field
-                  of 5000 m2 where, over the last 20 years, it has being planted
-                  various species of fruit trees and ornamental plants.
+                {rooms.Description}
                 </div>
               </div>
               <div className="h-[300px] border-b-[1px] border-[#e1e0e0] flex   flex-col">
@@ -351,6 +358,10 @@ const About = () => {
         </div>
       </div>
     </div>
+    )
+
+  }
+  </div>
   );
 };
 

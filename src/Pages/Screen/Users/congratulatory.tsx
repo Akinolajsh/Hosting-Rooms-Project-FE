@@ -1,4 +1,4 @@
-const congratulatory = () => {
+const Congratulation = () => {
   return (
     <div className="w-full h-[100vh] flex bg-slate-700">
       <div className="h-[100%] w-[50%] bg-[red] flex justify-center items-center relative">
@@ -22,4 +22,4 @@ const congratulatory = () => {
   );
 };
 
-export default congratulatory;
+export default Congratulation;
